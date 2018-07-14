@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import registerServiceWorker from './registerServiceWorker';
 
 const isX = '\u2764';
 const isO = '\u2b50';
@@ -123,3 +124,5 @@ function Square(props) {
     }
     return null;
   }
+
+  registerServiceWorker();
